@@ -1,0 +1,48 @@
+/* ---- Palette ---- */
+:root{
+  --nu-purple:purple;
+  --nu-purple-dark:indigo;
+  --black:black;
+  --grey-1:darkgrey;
+  --grey-2:grey;
+  --text:midnightblue;
+}
+
+/* Base */
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif; }
+
+/* Northwestern purple */
+:root { --nu-purple: #4E2A84; --nu-black: #1f1f1f; }
+
+/* Title */
+h1, .navbar-brand { color: var(--nu-purple) !important; }
+
+/* Tabs */
+.nav-tabs > li.active > a,
+.nav-tabs > li.active > a:focus,
+.nav-tabs > li.active > a:hover {
+  background-color: #f8f8ff;
+  border-color: var(--nu-purple);
+  color: var(--nu-purple);
+}
+.nav-tabs > li > a:hover { color: var(--nu-purple); }
+
+/* Buttons */
+.btn-primary {
+  background-color: var(--nu-purple);
+  border-color: var(--nu-purple);
+}
+.btn-primary:hover { filter: brightness(0.95); }
+
+/* DataTable tweaks */
+.dataTables_wrapper .dataTables_paginate .paginate_button.current {
+  background: var(--nu-purple) !important;
+  color: #fff !important;
+  border: 1px solid var(--nu-purple) !important;
+}
+
+
+/* ---- Helpers ---- */
+.help-block, .help-text{
+  color:#555;
+}
